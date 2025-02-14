@@ -2,7 +2,14 @@ type UnorderedListProps = {
 	setColor: (color: string) => void;
 };
 const UnorderedList = ({ setColor }: UnorderedListProps) => {
-	const arr = ["hotpink", "rebeccapurple", "limegreen"];
+	const arr = [
+		"hotpink",
+		"rebeccapurple",
+		"lightblue",
+		"forestgreen",
+		"limegreen",
+		"lightgreen",
+	];
 
 	const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		setColor((e.target as HTMLButtonElement).innerHTML);
